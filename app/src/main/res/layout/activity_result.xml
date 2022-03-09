@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/legenda"
+        style="@style/estilo_base"
+        android:text="@string/tv_legenda"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/exibeLiquido"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/legenda"
+        />
+
+    <TextView
+       android:id="@+id/exibeVR"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/exibeLiquido"
+        />
+
+    <TextView
+       android:id="@+id/exibeVA"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/exibeVR"
+        />
+
+    <TextView
+        android:id="@+id/exibeVT"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/exibeVA"
+        />
+
+    <TextView
+        android:id="@+id/exibePS"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/exibeVT"
+        />
+
+    <TextView
+        android:id="@+id/exibeIRRF"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/exibePS"
+        />
+
+    <TextView
+        android:id="@+id/exibeINSS"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/exibeIRRF"
+        />
+
+    <TextView
+        android:id="@+id/exibeBruto"
+        style="@style/estilo_textview"
+        app:layout_constraintTop_toBottomOf="@+id/exibeINSS"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

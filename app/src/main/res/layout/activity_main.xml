@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity.MainActivity">
+
+        <TextView
+            android:id="@+id/tvEntrada"
+            style="@style/estilo_textview"
+            android:text="@string/entrada"
+            android:textColor="#000000"
+            android:textSize="25sp"
+             />
+
+        <TextView
+            android:id="@+id/tvDados"
+            style="@style/estilo_base"
+            android:text="@string/infoDados"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvEntrada" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDados">
+
+            <TextView
+                style="@style/estilo_textview"
+                android:layout_marginBottom="10dp"
+                android:text="@string/salario"
+                android:textColor="#3E3E3E"
+                 />
+
+
+            <EditText
+                android:paddingLeft="7dp"
+                android:id="@+id/etInfoDados"
+                style="@style/estilo_edit"
+                android:layout_marginBottom="10dp"
+                android:inputType="numberDecimal"
+                 />
+
+            <TextView
+                style="@style/estilo_textview"
+                android:layout_marginBottom="10dp"
+
+                android:text="@string/dependentes"
+                 />
+
+
+            <EditText
+
+                android:id="@+id/etDependentes"
+                style="@style/estilo_edit"
+                android:layout_marginBottom="10dp"
+                 />
+
+
+
+            <TextView
+                style="@style/estilo_textview"
+                android:layout_marginBottom="10dp"
+                android:text="@string/vR"
+
+                 />
+
+
+            <RadioGroup
+                android:id="@+id/rgVR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/temVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rb_sim"
+                    />
+
+                <RadioButton
+                    android:id="@+id/naoVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/rb_nao"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/estilo_textview"
+                android:layout_marginBottom="10sp"
+
+                android:text="@string/vA"
+                 />
+
+
+            <RadioGroup
+                android:id="@+id/rgVA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/temVA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/rb_sim"
+                     />
+
+                <RadioButton
+                    android:id="@+id/naoVA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/rb_nao"
+                     />
+            </RadioGroup>
+
+
+            <TextView
+                style="@style/estilo_textview"
+                android:layout_marginBottom="10sp"
+                android:text="@string/vT"
+                 />
+
+
+            <RadioGroup
+                android:id="@+id/rgVT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/temVT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/rb_sim"
+                     />
+
+                <RadioButton
+                    android:id="@+id/naoVT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/rb_nao"
+                     />
+            </RadioGroup>
+
+            <TextView
+                style="@style/estilo_textview"
+                android:layout_marginBottom="10dp"
+
+                android:text="@string/planoSaude"
+                />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/bt_calc"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

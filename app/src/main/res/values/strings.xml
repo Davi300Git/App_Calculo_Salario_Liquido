@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Calculo salario</string>
+    <string name="entrada">Bem-Vindo. Calcule o seu salario da empresa aqui</string>
+    <string name="infoDados">Insira seus dados para que nosso APP calcule</string>
+    <string name="salario">Informe seu salario</string>
+    <string name="dependentes">Numero de Dependentes</string>
+    <string name="planoSaude">Plano de Saúde</string>
+    <string name="vR">Vale Refeição</string>
+    <string name="rb_sim">Sim</string>
+    <string name="rb_nao">Não</string>
+    <string name="vA">Vale Alimentação</string>
+    <string name="bt_calc">CAlCULAR</string>
+    <string name="vT">Vale Transporte</string>
+    <string name="tv_descontos">Descontos</string>
+    <string name="tv_salarioBruto">Salário Bruto</string>
+    <string name="tv_legenda">Calculamos e os resultados são esses:</string>
+    <string name="tv_nome">Nome</string>
+    <string name="btn_comece">comece</string>
+    <string name="tv_salarioLiqui">Salário Líquido</string>
+    <string name="tv_inss">INSS</string>
+    <string name="tv_irrf">IRRF</string>
+    <string name="tv_porcentagem">Porcentagem</string>
+
+    <string-array name="items">
+        <item>Standard</item>
+        <item>Básico</item>
+        <item>Super</item>
+        <item>Master</item>
+    </string-array>
+
+</resources>
